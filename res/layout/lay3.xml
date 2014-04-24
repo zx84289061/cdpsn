@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#CFCFCF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_weight="1"
+        android1:background="#FFFFFF"
+        android1:gravity="center"
+        android1:orientation="vertical" >
+
+        <ProgressBar
+            android1:id="@+id/pBar3"
+            style="?android:attr/progressBarStyleLarge"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:visibility="invisible" />
+
+        <ScrollView
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_weight="1.36" >
+
+            <TextView
+                android1:id="@+id/jgtv"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:gravity="center"
+        android1:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CfCfCf" >
+
+        <CheckBox
+            android1:id="@+id/checkBox2"
+            android1:layout_width="wrap_content"
+            android1:layout_height="25dp"
+            android1:layout_alignBottom="@+id/checkBox1"
+            android1:layout_alignLeft="@+id/keyedit"
+            android1:text="@string/kf" />
+
+        <CheckBox
+            android1:id="@+id/checkBox4"
+            android1:layout_width="wrap_content"
+            android1:layout_height="25dp"
+            android1:layout_below="@+id/checkBox2"
+            android1:layout_toRightOf="@+id/spinner1"
+            android1:text="@string/wq" />
+
+        <Spinner
+            android1:id="@+id/spinner1"
+            android1:layout_width="100dp"
+            android1:layout_height="50dp"
+            android1:layout_alignParentLeft="true"
+            android1:layout_marginLeft="24dp"
+            android1:textSize="15sp" />
+
+        <EditText
+            android1:id="@+id/keyedit"
+            android1:layout_width="100dp"
+            android1:layout_height="wrap_content"
+            android1:layout_above="@+id/checkBox2"
+            android1:layout_alignTop="@+id/button1"
+            android1:layout_toRightOf="@+id/spinner1"
+            android:hint="@string/keyword"
+            android1:ems="10"
+            android1:gravity="center"
+            android1:textSize="15sp" />
+
+        <CheckBox
+            android1:id="@+id/checkBox1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="25dp"
+            android1:layout_alignLeft="@+id/spinner1"
+            android1:layout_below="@+id/spinner1"
+            android1:text="@string/teach" />
+
+        <CheckBox
+            android1:id="@+id/checkBox3"
+            android1:layout_width="wrap_content"
+            android1:layout_height="25dp"
+            android1:layout_alignBaseline="@+id/checkBox4"
+            android1:layout_alignBottom="@+id/checkBox4"
+            android1:layout_alignLeft="@+id/checkBox1"
+            android1:text="@string/jy" />
+
+        <Button
+            android1:id="@+id/searchbtn"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android1:layout_alignBottom="@+id/keyedit"
+            android1:layout_alignTop="@+id/keyedit"
+            android1:layout_toRightOf="@+id/keyedit"
+            android:background="@drawable/button"
+            android1:text="搜索"
+            android1:textSize="15sp" />
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

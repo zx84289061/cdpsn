@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ <!-- title -->
+
+<LinearLayout
+    android:id="@+id/layout_top"
+    android:layout_width="match_parent"
+    android:layout_height="40dip"
+    android:background="@color/blue"
+    android:gravity="center" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginpage"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</LinearLayout>
+
+<RelativeLayout
+    android:id="@+id/login_div"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_margin="15dp"
+    android:layout_weight="0.38"
+    android:clickable="true"
+    android:padding="15dp" >
+
+    <!-- 用户名 input -->
+
+    <EditText
+        android:id="@+id/username_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/idhint" 
+        android:inputType="textEmailAddress"
+        android:singleLine="true"/>
+   <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="3dip"
+        android:layout_alignLeft="@+id/password_edit"
+        android:layout_below="@+id/username_edit" />
+    
+    <!-- 密码 input -->
+	 <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username_edit"
+        android:layout_below="@+id/username_edit"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/pwdhint"
+        android:inputType="textPassword"
+        android:password="true"
+        android:singleLine="true" />
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password_edit"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rememberBox"
+        android:clickable="true"
+        android:background="@drawable/bigbutton"
+        android:text="@string/loginbtn" />
+
+    <CheckBox
+        android:id="@+id/rememberBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password_edit"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/password_edit"
+        android:text="@string/rembpwd" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="5dip"
+        android:layout_alignLeft="@+id/signin_button"
+        android:layout_below="@+id/signin_button" />
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/signin_button"
+        android:layout_below="@+id/textView1"
+        android:clickable="true"
+        android:background="@drawable/bigbutton"
+        android:text="@string/newreg" />
+
+    <Button
+        android:id="@+id/yke"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rememberBox"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/password_edit"
+        android:background="@drawable/bigbutton"
+        android:clickable="true"
+        android:text="游 客"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

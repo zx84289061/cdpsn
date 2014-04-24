@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/btnbk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbweb1"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/progressbar" />
+
+    <WebView
+        android:id="@+id/wv1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.86" >
+    </WebView>
+
+    <Button
+        android:id="@+id/sqjob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sqjob" />
+
+    <Button
+        android:id="@+id/scjob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scjob" />
+
+</LinearLayout>

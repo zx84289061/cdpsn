@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:layout_width="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_height="wrap_content" 
+	android:orientation="vertical"
+	>
+	<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp" >
+
+	<TextView
+	    android:id="@+id/jobname"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:singleLine="true"
+	    android:text="name" />
+
+	<TextView
+	    android:id="@+id/jobcity"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/jobname"
+	    android:layout_alignParentRight="true"
+	    android:text="city" />
+
+
+	<TextView
+	    android:id="@+id/jobcomp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/jobname"
+	    android:gravity="center"
+	    android:text="company" />
+
+	<TextView
+	    android:id="@+id/jobweb"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/jobcomp"
+	    android:text="web" />
+	<TextView
+	    android:id="@+id/jobtime"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/jobcomp"
+	    android:layout_alignParentRight="true"
+	    android:text="time" />
+	
+	</RelativeLayout>
+
+
+
+</LinearLayout>

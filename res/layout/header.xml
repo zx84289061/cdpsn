@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp" >
+
+        <ImageView
+            android:id="@+id/headpic"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.63"
+            android:src="@drawable/tx" />
+
+<LinearLayout
+       android:orientation="vertical" 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"       
+       android:layout_gravity="center_vertical">
+  
+        <TextView
+            android:id="@+id/usernametv"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="false"
+            android:text="zx84289061@163.com"
+            android:textColor="@color/orange"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/welcome"
+            android:textColor="@color/orange" />
+        
+  </LinearLayout>
+        
+ <TextView
+     android:id="@+id/blank"
+     android:textColor="@color/orange"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_weight="2.50"
+     android:text=" " />
+
+
+
+<LinearLayout
+       android:orientation="vertical" 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"       
+       android:layout_gravity="center_vertical">
+  
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:textColor="@color/orange"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from" />
+
+        <LinearLayout
+	       android:orientation="horizontal" 
+	       android:layout_width="fill_parent" 
+	       android:layout_height="fill_parent">
+
+	         <TextView
+	             android:id="@+id/location"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text="@string/location"
+	             android:textColor="@color/orange"
+	             android:textStyle="italic"
+	             android:textSize="12sp" />
+
+            <ProgressBar
+                android:id="@+id/pbarcity"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/locationchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change"
+                android:textColor="@color/red" 
+                android:layout_marginLeft="22dp"/>
+
+          </LinearLayout>
+  </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="131dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+</LinearLayout>

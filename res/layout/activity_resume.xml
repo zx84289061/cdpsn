@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:background="@color/blue"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grjlgl"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+    <!-- reginfo -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+                    android:layout_marginLeft="28dp">
+
+        <EditText
+            android:id="@+id/nowlive"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/nowlivetv"
+            android:ems="10"
+            android:textSize="16dip" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/headpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nowlive"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/name"
+            android:src="@drawable/tx" />
+
+        <TextView
+            android:id="@+id/nowlivetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/name"
+            android:gravity="center_horizontal"
+            android:text="@string/nowlive" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/nowlivetv"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/nametv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/nowlivetv"
+            android:gravity="center_horizontal"
+            android:text="@string/name" />
+
+        <Button
+            android:id="@+id/changeheadpicbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/nowlive"
+            android:layout_alignBottom="@+id/nowlive"
+            android:layout_alignLeft="@+id/headpic"
+            android:text="@string/changehead"
+            android:background="@drawable/button"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/wishworktv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/wishwork" />
+
+        <EditText
+            android:id="@+id/wishwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:textSize="16dip" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cardtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="13dp"
+            android:text="@string/card" />
+
+        <EditText
+            android:id="@+id/card"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_weight="0.17"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16dip" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/usernametv"
+        android:layout_width="84dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/lxfs" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/phonetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/phone" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/emailtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/email" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/emailres"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:inputType="textEmailAddress">"
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/qqtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/qq" />
+
+        <EditText
+            android:id="@+id/qq"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:inputType="number" >
+        </EditText>
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/msntv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/msn" />
+
+        <EditText
+            android:id="@+id/msn"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:inputType="number" >
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/saveres"
+        android:background="@drawable/bigbutton" />
+
+</LinearLayout>
+</ScrollView>

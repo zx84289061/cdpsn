@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rega"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+    <!-- reginfo -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/nametv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:hint="请填写真实姓名"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cardtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/card" />
+
+        <EditText
+            android:id="@+id/card"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:hint="请填写第二代残疾证号码"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16dip" >
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/usernametv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/username" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="195dp"
+            android:hint="输入您的登陆用户名"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:ems="10" >
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pwdtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/pwd" />
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:hint="密码长度6-14位"
+            android:inputType="textPassword" >
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/checkpwdtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/checkpwd">       
+        </TextView>
+
+        <EditText
+            android:id="@+id/checkpwd"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword" >
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/emailtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:hint="未来可用作账号登录"
+            android:ems="10"
+            android:inputType="textEmailAddress" >
+
+        </EditText>
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/checknumtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/checknum" />
+
+        <EditText
+            android:id="@+id/checknum"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0.02"
+            android:ems="9"
+            android:hint="" >
+
+            <requestFocus />
+        </EditText>
+
+        <WebView
+            android:id="@+id/chkwv"
+            android:layout_width="88dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.11" />
+
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/regcheck" />
+
+    <TextView
+        android:id="@+id/regtktv"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_gravity="center"
+        android:text="@string/regtk" />
+
+    <Button
+        android:id="@+id/regbtna"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/regbtn" 
+        android:background="@drawable/bigbutton"/>
+
+
+</LinearLayout>
+</ScrollView>

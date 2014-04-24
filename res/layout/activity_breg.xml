@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regb"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+    <!-- reginfo -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/emailtvb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/emailb"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:ems="9"
+            android:hint="可直接用作账号登录"
+            android:inputType="textEmailAddress" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pwdtvb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/pwd" />
+
+        <EditText
+            android:id="@+id/pwdb"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:ems="9"
+            android:hint="密码长度6-14位"
+            android:inputType="textPassword" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/checkpwdtvb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/checkpwd" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/checkpwdb"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:ems="9"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/nicknametvb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/nickname" />
+
+        <EditText
+            android:id="@+id/nicknameb"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:ems="9"
+            android:hint="中文字母数字组合" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/checknumvb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center_horizontal"
+            android:text="@string/checknum" />
+
+        <EditText
+            android:id="@+id/checknumb"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0.02"
+            android:ems="9"
+            android:hint="" >
+
+            <requestFocus />
+        </EditText>
+
+        <WebView
+            android:id="@+id/chkwv"
+            android:layout_width="88dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.11" />
+
+    </LinearLayout>
+
+ 
+
+    <CheckBox
+        android:id="@+id/checkBoxb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/regcheck" />
+
+    <TextView
+        android:id="@+id/regtktvb"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_gravity="center"
+        android:text="@string/regtk" />
+
+    <Button
+        android:id="@+id/regbtnb"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/regbtn"
+        android:background="@drawable/bigbutton" />
+
+</LinearLayout>
+</ScrollView>

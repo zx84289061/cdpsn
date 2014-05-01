@@ -42,7 +42,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.cdpsn.LoginActivity"
+            android:name="com.example.cdpsn.ContentActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:launchMode="singleInstance" >
@@ -57,7 +57,12 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.example.cdpsn.ContentActivity"
+            android:name="com.example.cdpsn.LoginActivity"
+            android:label="@string/title_activity_content"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.example.cdpsn.DetailInfoActivity"
             android:label="@string/title_activity_content"
             android:launchMode="singleTask" >
         </activity>

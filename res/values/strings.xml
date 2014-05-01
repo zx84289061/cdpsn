@@ -33,6 +33,7 @@
     <string name="title_activity_breg">BregActivity</string>
     <string name="ywjj">要闻聚焦</string>
     <string name="zt">专题</string>
+    <string name="tbgz">特别关注</string>
     <string name="from">您所在的城市</string>
     <string name="welcome">欢迎您</string>
     <string name="location">杭州</string>
@@ -62,7 +63,7 @@
     <string name="phone">手机</string>
     <string name="qq">QQ</string>
     <string name="msn">MSN</string>
-    <string name="keyword">关键字</string>
+    <string name="keyword">输入关键字</string>
     <string name="saveres">保存简历</string>
     <string name="nowlive">现居住地</string>
     <string name="wishwork">期望工作地区</string>

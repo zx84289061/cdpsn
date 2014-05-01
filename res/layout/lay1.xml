@@ -1,74 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffffff"
+    android:background="#FFFFFF"
     android:orientation="vertical" >
+    
+     <RelativeLayout
+       style="@style/title_layout_style"
+       android:gravity="center"
+       android:paddingBottom="5.0dip"
+       android:paddingTop="5.0dip" 
+		android:id = "@+id/lay11">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="396dp"
-        android:layout_weight="1.03"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:orientation="vertical" >
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:gravity="center" >
 
-        <ProgressBar
+           <RadioGroup
+               android:id="@+id/tab_rg_menu1"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/navigation_menu_bg"
+               android:orientation="horizontal" >
+
+               <RadioButton
+                   android:id="@+id/t11"
+                   style="@style/tab_rb_style1"
+                   android:checked="true" 
+                   android:text="@string/ywjj"
+                   android:textSize="12sp" />
+
+               <RadioButton
+                   android:id="@+id/t12"
+                   style="@style/tab_rb_style1" android:textSize="12sp"
+                   android:text="@string/tbgz" />
+
+               <RadioButton
+                   android:id="@+id/t13"
+                   style="@style/tab_rb_style1" android:textSize="12sp"
+                   android:text="@string/zt" /> 
+
+           </RadioGroup>
+       </LinearLayout>
+   </RelativeLayout>
+    
+
+<ProgressBar
             android:id="@+id/pBar1"
             style="?android:attr/progressBarStyleLarge"
-            android:layout_width="80dp"
-            android:layout_height="90dp"
-            android:layout_marginTop="30dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below = "@id/lay11"
             android:gravity="center" />
 
         <com.example.cdpsn.DragListView
             android:id="@+id/l1"
+            android:layout_below = "@id/lay11"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:cacheColorHint="#00000000"
             android:divider="#000000"
-            android:dividerHeight="1dp"
-            android:visibility="invisible" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="#2ADFF3"
-        android:orientation="horizontal" >
-
-        <LinearLayout
-            android:id="@+id/btnsbg"
-            android:layout_width="200dp"
-            android:layout_height="fill_parent"
-            android:background="@drawable/left_choose"
-            android:orientation="horizontal" >
-
-            <TextView
-                android:id="@+id/btn1"
-                android:layout_width="100dp"
-                android:layout_height="43dp"
-                android:gravity="center"
-                android:text="@string/ywjj"
-                android:textColor="@color/red" />
-
-            <TextView
-                android:id="@+id/btn2"
-                android:layout_width="100dp"
-                android:layout_height="fill_parent"
-                android:gravity="center"
-                android:text="@string/zt"
-                android:textColor="@color/red" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/updatetv"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_weight="1.00"
-            android:gravity="center"
-            android:text="最后更新时间:\n未知"
-            android:textSize="12sp" />
-    </LinearLayout>
-
-</LinearLayout>
+            android:dividerHeight="1dp" >
+        </com.example.cdpsn.DragListView>
+</RelativeLayout>

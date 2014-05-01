@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+	<include layout="@layout/detail_header" 
+	    android:id="@+id/detail_headerd"
+	    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	    /> 
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/detail_headerd"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="21sp" />
+		<TextView
+            android:id="@+id/time_from"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/title"
+            android:gravity="center" 
+            android:text="发布时间："
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+
+
+		<ProgressBar
+           android:id="@+id/detailnew_pb"
+           style="?android:attr/progressBarStyleLarge"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_below ="@id/time_from"
+           android:gravity="center" />
+        
+
+ 		<ScrollView
+            android:layout_below ="@id/time_from" 
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:id="@+id/content"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:text=""
+	                android:textColor="@color/black"
+	                android:textSize="18sp" />
+
+          </ScrollView>
+        
+</RelativeLayout>

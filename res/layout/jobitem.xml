@@ -14,18 +14,17 @@
 	<TextView
 	    android:id="@+id/jobname"
 	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
+	    android:layout_height="wrap_content" android:textColor="@color/black"
 	    android:singleLine="true"
 	    android:text="name" />
 
 	<TextView
 	    android:id="@+id/jobcity"
-	    android:layout_width="wrap_content"
+	    android:layout_width="wrap_content" android:textColor="@color/black"
 	    android:layout_height="wrap_content"
 	    android:layout_alignBottom="@+id/jobname"
 	    android:layout_alignParentRight="true"
 	    android:text="city" />
-
 
 	<TextView
 	    android:id="@+id/jobcomp"
@@ -34,12 +33,13 @@
 	    android:layout_alignParentLeft="true"
 	    android:layout_below="@+id/jobname"
 	    android:gravity="center"
-	    android:text="company" />
+	    android:text="company"
+	    android:textColor="@color/black" />
 
 	<TextView
 	    android:id="@+id/jobweb"
 	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
+	    android:layout_height="wrap_content" android:textColor="@color/black"
 	    android:layout_below="@+id/jobcomp"
 	    android:text="web" />
 	<TextView
@@ -47,7 +47,7 @@
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_below="@id/jobcomp"
-	    android:layout_alignParentRight="true"
+	    android:layout_alignParentRight="true" android:textColor="@color/black"
 	    android:text="time" />
 	
 	</RelativeLayout>

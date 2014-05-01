@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+	<TextView
+	    android:id="@+id/dsfds"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/awetw" android:textColor="#444444"
+	    android:singleLine="true" android:gravity="center"
+	    android:text="地址:"
+	    
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/awetw" android:textColor="#444444"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/addr_a"
+	    android:gravity="center"
+	    android:text="电话:"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/asfdpo"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/awetw"
+	    android:gravity="center" android:textColor="#444444"
+	    android:text="邮编:"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/tel_a"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/asfdpo" android:gravity="center"
+	    android:layout_alignParentRight="true"
+	    android:layout_toRightOf="@+id/awetw" android:textColor="#444444"
+	    android:text="city"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/post_a"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true" android:gravity="center"
+	    android:layout_below="@+id/awetw" android:textColor="#444444"
+	    android:layout_toRightOf="@+id/awetw"
+	    android:text="time" 
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/addr_a"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/dsfds"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_toRightOf="@+id/dsfds"
+	    android:gravity="center"
+	    android:text="TextView"
+	    android:textSize="20sp"
+	    android:textColor="#444444" />
+	
+	</RelativeLayout>

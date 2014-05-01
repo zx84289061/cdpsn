@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string-array name="provinces">
-	   	 <item>省份</item>
 		<item>北京市</item>
 		<item>天津市</item>
 		<item>河北省</item>
@@ -35,6 +34,12 @@
 		<item>新疆</item>
 		<item>新疆兵团</item>
 		<item>黑龙江农垦</item>
+	</string-array>
+	<string-array name="types">
+		<item>教育</item>
+		<item>就业</item>
+		<item>康复</item>
+		<item>维权</item>
 	</string-array>
 </resources>
 

@@ -1,10 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/head_bg">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" android:background="@drawable/head_bg"
         android:layout_height="wrap_content" >
 
         <Button
@@ -14,7 +9,6 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:background="@drawable/btn_back"/>
-        
 
 
         <Button
@@ -25,6 +19,16 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/btn_more" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnmore"
+            android:layout_toRightOf="@+id/btnbk"
+            android:gravity="center"
+            android:text="HEAD"
+            android:textColor="@color/text_gray"
+            android:textSize="18sp" />
 
-</LinearLayout>
+</RelativeLayout>

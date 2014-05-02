@@ -8,8 +8,7 @@
      <RelativeLayout
        style="@style/title_layout_style"
        android:gravity="center"
-       android:paddingBottom="5.0dip"
-       android:paddingTop="5.0dip" 
+       android:paddingTop="2.0dip" 
 		android:id = "@+id/lay41">
 
        <LinearLayout

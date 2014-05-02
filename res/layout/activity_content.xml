@@ -18,6 +18,7 @@
         android:id="@+id/linearLayout1"
         android:layout_width="fill_parent"
         android:layout_height="30dp"
+        android:background="@color/background"
          >
 
         <TextView

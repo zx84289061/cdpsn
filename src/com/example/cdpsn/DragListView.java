@@ -32,7 +32,7 @@ public class DragListView extends ListView implements OnScrollListener,
 	// 拖拉ListView枚举所有状态
 	private enum DListViewState {
 		LV_NORMAL, // 普通状态
-		LV_PULL_REFRESH, // 下拉状态（为超过mHeadViewHeight）
+		//LV_PULL_REFRESH, // 下拉状态（为超过mHeadViewHeight）
 		LV_RELEASE_REFRESH, // 松开可刷新状态（超过mHeadViewHeight）
 		LV_LOADING;// 加载状态
 	}
@@ -288,44 +288,44 @@ public class DragListView extends ListView implements OnScrollListener,
 			if (offset > 0) {
 				// 设置headView的padding属性.
 				mHeadView.setPadding(0, offset - mHeadViewHeight, 0, 0);
-				switchViewState(DListViewState.LV_PULL_REFRESH);// 下拉状态
+				//switchViewState(DListViewState.LV_PULL_REFRESH);// 下拉状态
 			}
 
 		}
 			break;
-		// 下拉状态
-		case LV_PULL_REFRESH: {
-			setSelection(0);// 选中第一项，可选.
-			// 设置headView的padding属性.
-			mHeadView.setPadding(0, offset - mHeadViewHeight, 0, 0);
-			if (offset < 0) {
-				/***
-				 * 要明白为什么isScroller = false;
-				 */
-				isScroller = false;
-				switchViewState(DListViewState.LV_NORMAL);// 普通状态
-				Log.e("jj", "isScroller=" + isScroller);
-			} else if (offset > mHeadViewHeight) {// 如果下拉的offset超过headView的高度则要执行刷新.
-				switchViewState(DListViewState.LV_RELEASE_REFRESH);// 更新为可刷新的下拉状态.
-			}
-		}
-			break;
-		// 可刷新状态
-		case LV_RELEASE_REFRESH: {
-			setSelection(0);
-			// 设置headView的padding属性.
-			mHeadView.setPadding(0, offset - mHeadViewHeight, 0, 0);
-			// 下拉offset>0，但是没有超过headView的高度.那么要goback 原装.
-			if (offset >= 0 && offset <= mHeadViewHeight) {
-				mBack = true;
-				switchViewState(DListViewState.LV_PULL_REFRESH);
-			} else if (offset < 0) {
-				switchViewState(DListViewState.LV_NORMAL);
-			} else {
-
-			}
-		}
-			break;
+//		// 下拉状态
+//		case LV_PULL_REFRESH: {
+//			setSelection(0);// 选中第一项，可选.
+//			// 设置headView的padding属性.
+//			mHeadView.setPadding(0, offset - mHeadViewHeight, 0, 0);
+//			if (offset < 0) {
+//				/***
+//				 * 要明白为什么isScroller = false;
+//				 */
+//				isScroller = false;
+//				switchViewState(DListViewState.LV_NORMAL);// 普通状态
+//				Log.e("jj", "isScroller=" + isScroller);
+//			} else if (offset > mHeadViewHeight) {// 如果下拉的offset超过headView的高度则要执行刷新.
+//				switchViewState(DListViewState.LV_RELEASE_REFRESH);// 更新为可刷新的下拉状态.
+//			}
+//		}
+//			break;
+//		// 可刷新状态
+//		case LV_RELEASE_REFRESH: {
+//			setSelection(0);
+//			// 设置headView的padding属性.
+//			mHeadView.setPadding(0, offset - mHeadViewHeight, 0, 0);
+//			// 下拉offset>0，但是没有超过headView的高度.那么要goback 原装.
+//			if (offset >= 0 && offset <= mHeadViewHeight) {
+//				mBack = true;
+//				switchViewState(DListViewState.LV_PULL_REFRESH);
+//			} else if (offset < 0) {
+//				switchViewState(DListViewState.LV_NORMAL);
+//			} else {
+//
+//			}
+//		}
+//			break;
 		default:
 			return;
 		}
@@ -352,10 +352,10 @@ public class DragListView extends ListView implements OnScrollListener,
 
 			break;
 		// 下拉状态
-		case LV_PULL_REFRESH:
-			mHeadView.setPadding(0, -1 * mHeadViewHeight, 0, 0);
-			switchViewState(mlistViewState.LV_NORMAL);
-			break;
+//		case LV_PULL_REFRESH:
+//			mHeadView.setPadding(0, -1 * mHeadViewHeight, 0, 0);
+//			switchViewState(mlistViewState.LV_NORMAL);
+//			break;
 		// 刷新状态
 		case LV_RELEASE_REFRESH:
 			mHeadView.setPadding(0, 0, 0, 0);
@@ -377,20 +377,20 @@ public class DragListView extends ListView implements OnScrollListener,
 		}
 			break;
 		// 下拉状态
-		case LV_PULL_REFRESH: {
-			mHeadProgressBar.setVisibility(View.GONE);// 隐藏进度条
-			mArrowImageView.setVisibility(View.VISIBLE);// 下拉图标
-			mRefreshTextview.setText("下拉可以刷新");
-			mArrowImageView.clearAnimation();// 清除动画
-
-			// 是有可刷新状态（LV_RELEASE_REFRESH）转为这个状态才执行，其实就是你下拉后在上拉会执行.
-			if (mBack) {
-				mBack = false;
-				mArrowImageView.clearAnimation();// 清除动画
-				mArrowImageView.startAnimation(reverseAnimation);// 启动反转动画
-			}
-		}
-			break;
+//		case LV_PULL_REFRESH: {
+//			mHeadProgressBar.setVisibility(View.GONE);// 隐藏进度条
+//			mArrowImageView.setVisibility(View.VISIBLE);// 下拉图标
+//			mRefreshTextview.setText("下拉可以刷新");
+//			mArrowImageView.clearAnimation();// 清除动画
+//
+//			// 是有可刷新状态（LV_RELEASE_REFRESH）转为这个状态才执行，其实就是你下拉后在上拉会执行.
+//			if (mBack) {
+//				mBack = false;
+//				mArrowImageView.clearAnimation();// 清除动画
+//				mArrowImageView.startAnimation(reverseAnimation);// 启动反转动画
+//			}
+//		}
+		//	break;
 		// 松开刷新状态
 		case LV_RELEASE_REFRESH: {
 			mHeadProgressBar.setVisibility(View.GONE);// 隐藏进度条

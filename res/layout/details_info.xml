@@ -36,15 +36,6 @@
             android:textSize="15sp" />
 
 
-		<ProgressBar
-           android:id="@+id/detailnew_pb"
-           style="?android:attr/progressBarStyleLarge"
-           android:layout_width="fill_parent"
-           android:layout_height="wrap_content"
-           android:layout_below ="@id/time_from"
-           android:gravity="center" />
-        
-
  		<ScrollView
             android:layout_below ="@id/time_from" 
             android:layout_marginLeft="5dp"

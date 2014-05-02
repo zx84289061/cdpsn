@@ -429,13 +429,12 @@ public class ContentActivity extends FragmentActivity implements
 				Bundle mBundle = new Bundle();
 
 				mBundle.putString("URL", lawdatas.get(lawTabRg.getCheckedRadioButtonId() - R.id.t41).get(arg2 - 1).url);// 压入数据
-				mBundle.putString("channel", switchKey(lawTabRg.getCheckedRadioButtonId() - R.id.t41) + 201);// 压入数据
+				mBundle.putString("channel", switchKey(lawTabRg.getCheckedRadioButtonId() - R.id.t41 + 201));// 压入数据
 				mBundle.putString("title", lawdatas.get(lawTabRg.getCheckedRadioButtonId() - R.id.t41).get(arg2 - 1).title);// 压入数据
 				mBundle.putInt("type", 1);// 压入数据
 				intent.putExtras(mBundle);
 				startActivity(intent);
-				overridePendingTransition(R.anim.slide_in_left,
-						R.anim.slide_out_right);
+				overridePendingTransition(R.anim.slide_right_in,R.anim.slide_left_out);
 			}
 		});
 		
@@ -632,8 +631,7 @@ public class ContentActivity extends FragmentActivity implements
 				mBundle.putInt("type", 0);// 压入数据
 				intent.putExtras(mBundle);
 				startActivity(intent);
-				overridePendingTransition(R.anim.slide_in_left,
-						R.anim.slide_out_right);
+				overridePendingTransition(R.anim.slide_right_in,R.anim.slide_left_out);
 			}
 		});
 	}

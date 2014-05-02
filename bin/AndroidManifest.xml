@@ -45,7 +45,7 @@
             android:name="com.example.cdpsn.ContentActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="singleInstance" android:theme="@style/Theme.TitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -59,12 +59,12 @@
         <activity
             android:name="com.example.cdpsn.LoginActivity"
             android:label="@string/title_activity_content"
-            android:launchMode="singleTask" >
+            android:launchMode="singleInstance" android:theme="@style/Theme.TitleBar" >
         </activity>
         <activity
             android:name="com.example.cdpsn.DetailInfoActivity"
             android:label="@string/title_activity_content"
-            android:launchMode="singleTask" >
+            android:launchMode="singleInstance" android:theme="@style/Theme.TitleBar" >
         </activity>
         <activity
             android:name="com.example.cdpsn.AregActivity"
@@ -76,19 +76,19 @@
         </activity>
         <activity
             android:name="com.example.cdpsn.JobsearchActivity"
-            android:label="@string/title_activity_jobsearch" >
+            android:label="@string/title_activity_jobsearch" android:theme="@style/Theme.TitleBar" >
         </activity>
         <activity
             android:name="com.example.cdpsn.ResumeActivity"
-            android:label="@string/title_activity_resume" >
+            android:label="@string/title_activity_resume" android:theme="@style/Theme.TitleBar" >
         </activity>
         <activity
             android:name="com.example.cdpsn.WebActivity"
-            android:label="@string/title_activity_web" >
+            android:label="@string/title_activity_web" android:theme="@style/Theme.TitleBar" >
         </activity>
         <activity
             android:name="com.example.cdpsn.TextActivity"
-            android:label="@string/title_activity_text" >
+            android:label="@string/title_activity_text" android:theme="@style/Theme.TitleBar" >
         </activity>
         <!-- For test only 测试状态通知栏，需要打开的Activity -->
         <activity android:name="com.example.cdpsn.TestActivity" >

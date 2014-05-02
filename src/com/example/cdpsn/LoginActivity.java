@@ -28,6 +28,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
+
+
 import com.example.cdpsn.tool.GenericTask;
 import com.example.cdpsn.tool.NetInfoFetcher;
 import com.example.cdpsn.tool.TaskAdapter;
@@ -274,7 +276,7 @@ public class LoginActivity extends Activity {
 		intent.putExtras(bundle);
 		dialog.dismiss();
 		startActivity(intent);
-		overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+		overridePendingTransition(R.anim.slide_right_in,R.anim.slide_left_out);
 		finish();
 	}
 	
